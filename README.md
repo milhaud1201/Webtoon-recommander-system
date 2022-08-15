@@ -32,23 +32,23 @@ _ _ _
 ## 프로젝트 progress
 1. 데이터 수집
     * 웹툰의 기본 정보 데이터 크롤링
-      |네이버|카카오|
+      |**네이버**|**카카오**|
       |---------|--------|
       |Title[제목]|id[작품 id]|
       |Artist[작가]|title[제목]|
-      |Genre[장르]|title[제목]|
-      |Score[최근 10회차 평점 평균]]|illustrator[그림 작가]|
+      |Genre[장르]|writer[스토리 작가]|
+      |Score[최근 3회차 평점 평균]]|illustrator[그림 작가]|
       |Story[줄거리]|synopsis[줄거리]|
       |Image[대표 썸네일 이미지]|keywords_1[키워드1]|
       |Link[웹툰 주소]]|keywords_2[키워드2]|
       |Thumbs[회차 별 썸네일 이미지 모음]|keywords_3[키워드3]|
       |Comments[베스트 댓글 모음]|keywords_4[키워드4]|
-      |Title[제목]|adult [연령제한]|
-      |Artist[작가]|thumbnail [대표 썸네일 이미지]|
-      |Genre[장르]|timg[회차 별 썸네일 이미지]|
-      |Title[제목]|like[좋아요 수]|
-      |Artist[작가]|view[조회수]|
-      |Genre[장르]|Genre[장르]|
+      ||adult [연령제한]|
+      ||thumbnail [대표 썸네일 이미지]|
+      ||timg[회차 별 썸네일 이미지]|
+      ||like[좋아요 수]|
+      ||view[조회수]|
+      ||Genre[장르]|
       
     * 웹툰의 회차별 썸네일 데이터 크롤링
   
