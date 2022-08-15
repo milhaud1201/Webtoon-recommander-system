@@ -38,9 +38,19 @@ def serialized(URL):
             title = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['title']
             title_list.append(title)
 
-            # 작품 스토리 작가
-            author = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['authors'][0]['name']
-            author_list.append(author)
+            # 작가 (스토리 작가, 그림 작가, 소설 원작의 경우 원작 작가)
+            # 소설 원작 작품 크롤링시 주석 해제
+            writer = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['authors'][0]['name']
+            illustrator = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['authors'][1]['name']
+#           original_story = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['authors'][2]['name']
+            writer_list.append(writer)
+            illustrator_list.append(illustrator)
+#           original_story_list.append(original_story)
+
+            # 성인 웹툰
+
+            adult = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['adult']
+            adult_list.append(adult)
 
             # 줄거리 수집
             synopsis = data['data']['sections'][i]['cardGroups'][0]['cards'][j]['content']['synopsis']
@@ -53,11 +63,17 @@ def serialized(URL):
             keywords_list.append(keywords)
 
     keywords_df = pd.DataFrame(keywords_list)        
-    df = pd.DataFrame(zip(id_list, title_list, author_list, synopsis_list))
+    df = pd.DataFrame(zip(id_list, title_list, writer_list, illustrator_list,
+                          adult_list, synopsis_list))
+#     df = pd.DataFrame(zip(id_list, title_list, writer_list, 
+#     illustrator_list, original_story_list, adult_list, synopsis_list))    
+    
     df = pd.concat([df, keywords_df], axis=1)
 
-    column_names = ['id', 'title', 'author', 'synopsis',
+    column_names = ['id', 'title', 'writer', 'illustrator', 'adult_list', 'synopsis',
         'keywords_1', 'keywords_2', 'keywords_3', 'keywords_4']
+#     column_names = ['id', 'title', 'writer', 'illustrator', 'original_story', 'adult_list', 'synopsis',
+#         'keywords_1', 'keywords_2', 'keywords_3', 'keywords_4']
     df.columns = column_names
 
     return df
@@ -85,9 +101,18 @@ def completed(page_num, URL):
         title = data[0]['cardGroups'][0]['cards'][page]['content']['title']
         title_list.append(title)
 
-        # 작품 스토리 작가
-        author = data[0]['cardGroups'][0]['cards'][page]['content']['authors'][0]['name']
-        author_list.append(author)
+        # 작가 (스토리 작가, 그림 작가, 소설 원작의 경우 원작 작가)
+        writer = data[0]['cardGroups'][0]['cards'][page]['content']['authors'][0]['name']
+        illustrator = data[0]['cardGroups'][0]['cards'][page]['content']['authors'][1]['name']
+#         origianl_story = data[0]['cardGroups'][0]['cards'][page]['content']['authors'][2]['name'] 소설일 때 주석 해제
+        writer_list.append(writer)
+        illustrator_list.append(illustrator)
+#         original_story_list.append(origianl_story)
+        
+        #　성인 웹툰 여부
+        
+        adult = data[0]['cardGroups'][0]['cards'][1]['content']['adult']
+        adult_list.append(adult)
 
         # 줄거리 수집
         synopsis = data[0]['cardGroups'][0]['cards'][page]['content']['synopsis']
@@ -100,10 +125,13 @@ def completed(page_num, URL):
         keywords_list.append(keywords)
 
     keywords_df = pd.DataFrame(keywords_list)
-    df = pd.DataFrame(zip(id_list, title_list, author_list, synopsis_list))
+#     df = pd.DataFrame(zip(id_list, title_list, writer_list, illustrator_list, original_story_list, adult_list, synopsis_list))
+    df = pd.DataFrame(zip(id_list, title_list, writer_list, illustrator_list, adult_list, synopsis_list))
+
     df = pd.concat([df, keywords_df], axis=1)
 
-    column_names = ['id', 'title', 'author', 'synopsis', 'keywords_1', 'keywords_2', 'keywords_3', 'keywords_4']
+#     column_names = ['id', 'title', 'writer', 'illustrator', 'origianl_story', 'adult', 'synopsis', 'keywords_1', 'keywords_2', 'keywords_3', 'keywords_4']
+    column_names = ['id', 'title', 'writer', 'illustrator', 'adult', 'synopsis', 'keywords_1', 'keywords_2', 'keywords_3', 'keywords_4']
     df.columns = column_names
             
     return df
