@@ -37,7 +37,7 @@ _ _ _
       |Title[제목]|id[작품 id]|
       |Artist[작가]|title[제목]|
       |Genre[장르]|writer[스토리 작가]|
-      |Score[최근 3회차 평점 평균]]|illustrator[그림 작가]|
+      |Score[최근 3회차 평점 평균]|illustrator[그림 작가]|
       |Story[줄거리]|synopsis[줄거리]|
       |Image[대표 썸네일 이미지]|keywords_1[키워드1]|
       |Link[웹툰 주소]]|keywords_2[키워드2]|
@@ -79,7 +79,7 @@ _ _ _
         - 로맨스 판타지 -> 로맨스, 판타지  
     
 
-    * 필요 없는 column drop
+    * 필요 없는 columns drop
     * 이미지 데이터 분류 (이미지 Png파일 폴더 별로 추출 및 pca 진행)
   
 3. 추천시스템 모델링
