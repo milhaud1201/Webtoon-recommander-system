@@ -11,94 +11,36 @@
 | <img src='https://avatars.githubusercontent.com/u/105341794?v=4' height=80 width=80></img> | <img src='https://avatars.githubusercontent.com/u/105343406?v=4' height=80 width=80></img> | <img src='https://avatars.githubusercontent.com/u/107037722?v=4' height=80 width=80></img> | <img src='https://avatars.githubusercontent.com/u/108461149?v=4' height=80 width=80></img> | <img src='https://avatars.githubusercontent.com/u/105343281?v=4' height=80 width=80></img> | <img src='https://avatars.githubusercontent.com/u/92346855?v=4' height=80 width=80></img> 
 | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/srinlin) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/Kwon-Sojung) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/chuchacha) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/milhaud1201) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/yelimlikelion) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/yirehE) |
 
-
-## 프로젝트 소개
+_ _ _
+## 프로젝트 progress
+1. 데이터 수집
+2. 데이터 전처리
+3. 장르 추천 시스템 모델링
+4. 이미지 분류 모델링
+5. Streamlit 배포
+_ _ _
+## 프로젝트 내용
 * 그림체 추천
   ```
   어쩌구
   ```
   
-* 장르 추천
-  ```
-  어쩌구
-  ```
-  
-* 평점 추천
+* 장르 및 평점 추천
   ```
   어쩌구
   ```
 
-_ _ _
-## 프로젝트 progress
-1. 데이터 수집
-    * 웹툰의 기본 정보 데이터 크롤링
-      |**네이버**|**카카오**|
-      |---------|--------|
-      |Title[제목]|id[작품 id]|
-      |Artist[작가]|title[제목]|
-      |Genre[장르]|writer[스토리 작가]|
-      |Score[최근 3회차 평점 평균]|illustrator[그림 작가]|
-      |Story[줄거리]|synopsis[줄거리]|
-      |Image[대표 썸네일 이미지]|keywords_1[키워드1]|
-      |Link[웹툰 주소]|keywords_2[키워드2]|
-      |Thumbs[회차 별 썸네일 이미지 모음]|keywords_3[키워드3]|
-      |Comments[베스트 댓글 모음]|keywords_4[키워드4]|
-      ||adult [연령제한]|
-      ||thumbnail [대표 썸네일 이미지]|
-      ||timg[회차 별 썸네일 이미지]|
-      ||like[좋아요 수]|
-      ||view[조회수]|
-      ||Genre[장르]|
-      
+## 시연 영상
+
+## 상세 내용
+|  프로젝트명  |  Github  |  Paper  |  Notion  |  Presentation |
+|-----------|-----------|-----------|-----------|-----------|
+|장르 & 그림체기반 웹툰 추천 시스템|[Link](https://github.com/milhaud1201/Webtoon-recommender-system)|[pdf](Files/Webtoon-Recommender-System-Summary.pdf)|[Notion](https://rough-lan-909.notion.site/00ba82baeee64363bf8ddb60f0af09e9)|[YouTube]()|
+
+## 프로젝트 참고자료 및 출처
+* 출처
+  * korean webtoon recommendation system (Naver and Daum): https://github.com/eunxu-10/Recommendation-System
+  * 콘텐츠의 특성과 사용자의 선호도를 고려한 웹툰 추천 시스템 : https://github.com/CUAI-CAU/Webtoon-Recommendation
+* 참고자료
   
-2. 데이터 전처리
-    * 카카오 웹툰 평점 계산
-    
-      -카카오 웹툰의 조회수를 이용하여 네이버의 평점과 호환되도록 평점을 계산함 
-      
-      -평점 계산 방법
-        1. 네이버 웹툰과 카카오 웹툰 모두 랭킹이 높을 경우 평점이 높은 경향이 있다는 것을 확인
-        2. 3 ~ 4일치의 누적 조회수를 수집하여 카카오 웹툰 전체를 랭킹 순으로 나열
-        3. 네이버 웹툰 평점 별 분포 확인
-        4. 카카오 랭킹순으로 높은 평점 부여 이때 카카오 웹툰에 부여한 평점과 네이버 웹툰의 평점 분포는 동일
 
-    * 카카오 웹툰과 네이버 웹툰의 장르 통일
-     
-      - 네이버
-        - 무협/사극 -> 무협
-        - 옴니버스, 에피소드, 스토리 -> 삭제
-        - 개그 -> 코믹
-        - 무협/사극, 액션 -> 액션/무협
-        - 스포츠 -> 학원
-        - 감성 -> 드라마 
-
-      - 카카오
-        - 액션/무협 -> 무협
-        - 코믹/일상 -> 코믹, 일상
-        - 판타지 드라마 -> 판타지, 드라마
-        - 공포/스릴러 -> 스릴러
-        - 로맨스 판타지 -> 로맨스, 판타지  
-    
-
-    * 필요 없는 columns drop
-    * 이미지 데이터 분류 (이미지 Png파일 폴더 별로 추출 및 pca 진행)
-  
-3. 추천시스템 모델링
-
-4. Streamlit 배포
-  
-_ _ _
-## 데이터 수집
-
-## 데이터 전처리
-
-## 추천시스템 모델링
-
-## streamlit 배포
-
-_ _ _
-## 프로젝트 결과
-
-## 프로젝트 회고
-
-## 프로젝트 참고자료
