@@ -40,7 +40,7 @@ _ _ _
       |Score[최근 3회차 평점 평균]|illustrator[그림 작가]|
       |Story[줄거리]|synopsis[줄거리]|
       |Image[대표 썸네일 이미지]|keywords_1[키워드1]|
-      |Link[웹툰 주소]]|keywords_2[키워드2]|
+      |Link[웹툰 주소]|keywords_2[키워드2]|
       |Thumbs[회차 별 썸네일 이미지 모음]|keywords_3[키워드3]|
       |Comments[베스트 댓글 모음]|keywords_4[키워드4]|
       ||adult [연령제한]|
