@@ -12,7 +12,7 @@
 | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/srinlin) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/Kwon-Sojung) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/chuchacha) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/milhaud1201) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/yelimlikelion) | [![Git Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github)](https://github.com/yirehE) |
 
 _ _ _
-## 프로젝트 progress
+## 프로젝트 process
 1. 데이터 수집
 2. 데이터 전처리
 3. 장르기반 추천 시스템 모델링
