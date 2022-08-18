@@ -43,5 +43,7 @@ _ _ _
 * 김영학 (2018) [마크로밀 트렌드 조사:웹툰] 만화를 양지로 끌어올린 웹툰, 생태계에 대한 관심 필요: [출처](https://www.startuptoday.kr/news/articleView.html?idxno=10395)
 * 김해욱 (2022) ‘네이버웹툰, 분사 5년만에 월 이용자수·매출 4배 넘게 성장’ UPI뉴스기사: [출처](https://www.upinews.kr/newsView/upi202205020041)
 * 한국콘텐츠진흥원 2021 만화·웹툰 이용자 실태조사: [출처](https://www.kocca.kr/kocca/bbs/view/B0000147/1846252.do?searchCnd=1&searchWrd=%EC%9B%B9%ED%88%B0&cateTp1=&cateTp2=&useYn=&menuNo=204153&categorys=0&subcate=0&cateCode=&type=&instNo=0&questionTp=&ufSetting=&recovery=&option1=&option2=&year=&morePage=&qtp=&domainId=&sortCode=&pageIndex=1)
-  
+* 양지훈, 이지영, & 이상우. (2016). 웹툰 (Webtoon) 의 흥행 결정요인 연구. *한국콘텐츠학회논문지*, 16(5), 194-204.
+* 도상범, & 강주영. (2018). 한, 미, 일 웹툰 분석을 통한 구독자 선호 요인 탐색: 네이버 웹툰을 중심으로. *한국빅데이터학회지*, 3(1), 21-32.
+* 최건호, 파이토치 첫걸음, 한빛미디어 2019
 
