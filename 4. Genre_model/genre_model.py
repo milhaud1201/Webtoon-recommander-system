@@ -27,7 +27,7 @@ df.columns = df.columns.str.strip('\'')
 
 def one_genre(title):
     """
-    장르 하나의 
+    웹툰 하나의 장르를 반환한다
     """
     g_row = df[df.title == title]
     genres = g_row[df.columns[2:]]
@@ -42,7 +42,10 @@ def genres(title_list):
 ## 시청 목록과 장르 유사도 높은 웹툰 중 평점 높은 10개
 score = genre_df.to_numpy()
 
-def genre_model(title_list):
+def genre_model(title_list=[]):
+    """
+    시청 목록을 넣으면 시청 목록과 유사한 장르의 웹툰 중 최근 평점이 높은 웹툰을 추천해준다
+    """    
     local_score = np.append(score, genres(title_list), axis=0)
     cosine_similar = cosine_similarity(local_score, local_score)
     cosine_similar_data = pd.DataFrame(cosine_similar)
@@ -68,6 +71,7 @@ def genre_model(title_list):
             if sorted_df.iloc[i].score == min_score:
                 ind = i
                 break
+#         동일한 평점일 경우 매 시행마다 랜덤하게 웹툰을 추천
         randnum = sorted_df[sorted_df.score == min_score].shape[0]
         randlist = random.sample(range(ind, ind + randnum), 10 - ind)
         tdf1, tdf2 = sorted_df[:ind], sorted_df.iloc[randlist]
