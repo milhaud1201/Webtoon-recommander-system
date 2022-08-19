@@ -24,6 +24,7 @@ _ _ _
 _ _ _
 ## 프로젝트 내용
 * 그림체 기반 추천
+  ![image](Files/grayscale.png "categorize drawing style")
   ```
   어쩌구
   ```
