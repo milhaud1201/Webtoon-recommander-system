@@ -40,12 +40,11 @@ _ _ _
   단, 유사도와 평점이 같은 웹툰은 랜덤으로 추천해 주는 작업을 진행하였다.
   ```
 
-## 시연 영상
 
 ## 상세 내용
 |  프로젝트명  |  Github  |  Paper  |  Notion  |  Presentation |
 |-----------|-----------|-----------|-----------|-----------|
-|장르 & 그림체기반 웹툰 추천 시스템|[Link](https://github.com/milhaud1201/Webtoon-recommender-system)|[pdf](Files/Webtoon-Recommender-System-Summary.pdf)|[Notion](https://rough-lan-909.notion.site/00ba82baeee64363bf8ddb60f0af09e9)|[YouTube]()|
+|장르 & 그림체기반 웹툰 추천 시스템|[Link](https://github.com/milhaud1201/Webtoon-recommender-system)|[pdf](Files/Webtoon-Recommender-System-Summary.pdf)|[Notion](https://rough-lan-909.notion.site/00ba82baeee64363bf8ddb60f0af09e9)|[YouTube](https://youtu.be/44gwBuIU2dU)|
 
 ## 프로젝트 참고자료 및 출처
 * korean webtoon recommendation system (Naver and Daum): [출처](https://github.com/eunxu-10/Recommendation-System)
