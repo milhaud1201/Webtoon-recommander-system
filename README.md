@@ -24,13 +24,13 @@ _ _ _
 _ _ _
 ## 프로젝트 내용
 * 그림체 기반 추천
-  ![image](Files/grayscale.png "categorize drawing style")
   ```
   사용자가 선호하는 그림체의 웹툰 제목을 입력하면 유사한 그림체를 가진 10개의 웹툰을 평점순으로 나열하여 추천해주는 시스템이다. 
   Neural Style Transfer 알고리즘을 이용해 전체 회차 썸네일의 style loss를 추출하여 PCA로 차원을 축소하고, 
   각 벡터들의 평균값을 웹툰별 대표 벡터로 지정한다. 
   유클리드 거리를 이용해 유사도를 판단하였다. 
   ```
+  <img src="Files/grayscale.png" width="500" height="300"/>
   
 * 장르 기반 추천
   ```
